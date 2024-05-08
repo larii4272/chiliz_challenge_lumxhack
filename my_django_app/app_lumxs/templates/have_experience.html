@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Compra de Experiência</title>
+</head>
+<body>
+    <h1>Teste de Compra de Experiência</h1>
+    
+    <form action="{% url 'have_experience' %}" method="post">
+        {% csrf_token %}
+        <label for="user">Usuário:</label>
+        <input type="text" id="user" name="user"><br><br>
+        
+        <label for="experience_id">ID da Experiência:</label>
+        <input type="text" id="experience_id" name="experience_id"><br><br>
+        
+        <button type="submit">Comprar Experiência</button>
+    </form>
+
+    <hr>
+
+    <h2>Criar Token Externo</h2>
+    
+    <form action="{% url 'create_outside_token' %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Criar Token</button>
+    </form>
+</body>
+</html>

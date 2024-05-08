@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+    position: absolute;
+    bottom: -40px; /* Ajuste conforme necessário */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Move para o centro horizontal */
+    z-index: 0; /* Valor alto para garantir que esteja acima de tudo */
+
+  }
+
+
+
+.app_name {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    position: absolute; /* Define o posicionamento absoluto */
+    top: 20px; /* Define a distância do topo */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Move o elemento para a esquerda em 50% da sua largura, centralizando-o */
+    z-index: 999; /* Define uma ordem de empilhamento alta para que o elemento fique acima de tudo */
+  }
+
+.container {
+  background-color: whitesmoke;
+  padding: 6px;
+  width: 350px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 darkgrey;
+
+}
+
+form {
+  position: absolute;
+  margin-top: 80px;
+  transition: .5s;
+  width: 300px;
+  height: 400px;
+  z-index: 10;
+}
+
+.buttonsForm {
+  margin-top: 40px;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 0 0 7px 0 #46B9AA;
+}
+
+.buttonsForm button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  position: relative;
+  padding: 10px 29px;
+}
+
+.warning-message {
+  font-size: 20px; /* Bigger font size */
+  background-color: #ffffcc; /* Yellowish background */
+  padding: 10px; /* Add padding for better readability */
+  border: 2px solid #ffcc00; /* Add border for emphasis */
+  border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+.btnColor {
+  position: absolute;
+  width: 108px;
+  height: 100%;
+  background: linear-gradient(to right, #46B9AA, #46B9AA);
+  border-radius: 30px;
+  transition: .3s;
+}
+
+input[type="text"], input[type="password"] {
+  border: none;
+  margin-top: 20px;
+  border-radius: 60px;
+  padding: 8px 0 8px 35px;
+  outline: none;
+  width: 100%;
+}
+
+button[type="submit"] {
+  background: #84d9f0;
+  color: white;
+  border-radius: 30px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 0 8px 15px;
+  font-size: 15px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.divCheck {
+  margin: 10px 0 0 5px;
+  width: 100%;
+  font-size: 13px;
+}
+
+#signin {
+  left: 25px;
+}
+
+#signup {
+  left: 450px;
+}
+
+i {
+  position: absolute;
+  left: 0;
+  padding: 10px 10px;
+}
+
+.iEmail {
+  top: 40px;
+}
+
+.iPassword {
+  top: 114px;
+}
+
+.iPassword2 {
+  top: 190px;
+}
+
+.elder_name {
+  top: 190px;
+}
+
+.elder_age {
+  top: 190px;
+}
+
+/* Estilizando a entrada de número */
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* Estilizando o ícone de bloqueio */
+  .fa-lock {
+    color: gray; /* Cor do ícone */
+    margin-top: 50px;
+    position: relative; /* Define a posição do ícone */
+    width: 100%;
+    height: 108px;
+
+  }
