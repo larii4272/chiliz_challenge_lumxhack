@@ -15,21 +15,6 @@ Além dos leilões, o contrato suporta a criação e transferência de tokens di
 ### Pagamentos e Taxas
 O contrato possibilita pagamentos em Ethereum para arrematar itens em leilões ou comprar tokens. Uma porcentagem do valor arrecadado nos leilões é retida como taxa de serviço, sendo o restante repassado ao vendedor do item. Da mesma forma, ao comprar tokens, uma parte do valor pode ser destinada ao proprietário do contrato como taxa de serviço.
 
-## Como Usar
-
-Para utilizar o contrato AuctionCrypto, siga estas etapas:
-
-1. **Deploy do Contrato**: Implante o contrato na blockchain Ethereum utilizando uma plataforma de sua escolha, como Remix, Truffle ou execute este projeto no Foundry.
-
-### Exemplo de como executar o Deploy na rede chiliz
-`forge script script/AuctionCrypto.s.sol:AuctionCryptoScript --rpc-url chiliz --broadcast`
-
-2. **Interagir com o Contrato**: Utilize uma carteira Ethereum compatível, como MetaMask, para interagir com o contrato. Isso inclui criar novos leilões, fazer lances em leilões existentes, criar tokens e comprar tokens disponíveis.
-
-3. **Gerenciar Transações**: Ao participar de leilões ou comprar tokens, assegure-se de possuir saldo suficiente em sua carteira Ethereum. Além disso, esteja ciente das taxas associadas às transações, incluindo taxas de gás e taxas de serviço do contrato.
-
-4. **Monitorar Atividades**: Acompanhe os eventos emitidos pelo contrato para monitorar a atividade dos leilões e transações de tokens. Isso inclui eventos como a criação de novos leilões, lances em leilões, encerramento de leilões e compra de tokens.
-
 ## Autor
 Este contrato foi desenvolvido pela Equipe CryptoGenius.
 Para mais informações, entre em contato com hackateam4@gmail.com.
@@ -75,21 +60,6 @@ In addition to auctions, the contract supports the creation and transfer of digi
 
 ### Payments and Fees
 The contract enables payments in Ethereum to bid on items in auctions or purchase tokens. A percentage of the amount raised in auctions is retained as a service fee, with the remainder passed on to the seller of the item. Similarly, when purchasing tokens, a portion of the amount may be allocated to the contract owner as a service fee.
-
-## How to Use
-
-To utilize the AuctionCrypto contract, follow these steps:
-
-1. **Deploy the Contract**: Deploy the contract on the Ethereum blockchain using a platform of your choice, such as Remix, Truffle, or run this project on Foundry.
-
-   #### Example of how to deploy on the chiliz network
-   `forge script script/AuctionCrypto.s.sol:AuctionCryptoScript --rpc-url chiliz --broadcast`
-
-2. **Interact with the Contract**: Use a compatible Ethereum wallet, such as MetaMask, to interact with the contract. This includes creating new auctions, placing bids on existing auctions, creating tokens, and purchasing available tokens.
-
-3. **Manage Transactions**: When participating in auctions or purchasing tokens, ensure you have a sufficient balance in your Ethereum wallet. Also, be aware of the associated transaction fees.
-
-4. **Monitor Activities**: Keep track of events emitted by the contract to monitor auction and token transaction activity. This includes events such as the creation of new auctions, bids on auctions, auction closure, and token purchases.
 
 ## Author
 This contract was developed by the CryptoGenius Team.
